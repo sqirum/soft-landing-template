@@ -43,24 +43,23 @@ section#home .overlay {
 }
 section#home header {
   justify-content: space-between;
-  background: black;
   color: white;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1;
+  padding: 15px 0;
 }
 section#home header a {
   grid-column: 1/3;
 }
 section#home header a h1 {
   font-weight: 500;
-  padding: 20px 0;
 }
 section#home header nav {
-  grid-column: 3/9;
+  grid-column: 3/10;
   align-items: center;
   align-self: center;
+  justify-self: center;
 }
 section#home header nav ul {
   margin: 0;
@@ -70,14 +69,21 @@ section#home header nav ul {
   align-items: center;
 }
 section#home header nav ul li {
-  padding: 10px 10px;
+  padding: 8px 8px;
   font-size: 16px;
 }
-section#home header nav ul li :hover {
+section#home header nav ul li a:hover {
+  transition: all 0.4s ease;
   color: #29ca8e;
 }
 section#home header .hello-cta {
-  grid-column: 9/12;
+  grid-column: 10/13;
+  align-self: center;
+  justify-self: end;
+}
+section#home header .hello-cta a:hover {
+  transition: all 0.4s ease;
+  color: #29ca8e;
 }
 section#home .hero-text {
   position: absolute;
@@ -95,4 +101,187 @@ section#home .hero-text h2 {
 section#home .hero-text h3 {
   margin: 10px 0;
   font-weight: 0;
+}
+section#home .hero-text input {
+  border-radius: 30px;
+  padding: 20px;
+  text-indent: 10px;
+  width: 40%;
+  outline: none;
+  border: 0;
+  line-height: 20px;
+  margin: 0 auto;
+  transform: translateX(30px);
+}
+section#home .hero-text button {
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #29ca8e;
+  outline: 0;
+  border: 1px solid #29ca8e;
+  color: white;
+  transform: translateX(-30px);
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+section#home .hero-text button:hover {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background: white;
+  color: #29ca8e;
+}
+
+section#features {
+  background: #F9F9F9;
+  padding: 5% 0;
+}
+section#features .tabs {
+  grid-column: 1/7;
+  flex-wrap: wrap;
+  display: flex;
+  align-self: center;
+  transform: translateY(-10%);
+}
+section#features .tabs h2 {
+  font-weight: 300;
+  font-size: 50px;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+section#features .tabs input[type=radio] {
+  display: none;
+}
+section#features .tabs input[type=radio]:checked + label {
+  border-bottom: 3px solid #29ca8e;
+  color: black;
+}
+section#features .tabs input[type=radio]:checked + label + .tab-content {
+  display: block;
+}
+section#features .tabs label {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  color: #999999;
+  font-weight: 700;
+  cursor: pointer;
+}
+section#features .tabs label.responsive {
+  margin: 0 15px 0 0;
+}
+section#features .tabs label.mobile, section#features .tabs label.support {
+  margin: 0 15px;
+}
+section#features .tabs label:hover {
+  border-bottom: 3px solid #29ca8e;
+  color: black;
+  transition: all 1s ease;
+}
+section#features .tabs .tab-content {
+  display: none;
+  order: 1;
+}
+section#features .tabs .tab-content h4 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #353535;
+  margin: 10px 0;
+}
+section#features .tabs .tab-content p {
+  color: #757575;
+}
+section#features .feature-img {
+  grid-column: 7/13;
+  align-self: center;
+}
+section#features .feature-img img {
+  width: 100%;
+}
+
+section#about {
+  background: #F9F9F9;
+  padding: 6% 0;
+}
+section#about h2 {
+  grid-column: 1/13;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+section#about .about-item {
+  grid-column: span 4;
+  background: white;
+}
+section#about .about-item img {
+  width: 100%;
+}
+section#about .about-item .team-description {
+  padding: 20px;
+  position: relative;
+}
+section#about .about-item .team-description h5 {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+section#about .about-item .team-description h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+section#about .about-item .team-description p {
+  line-height: 1.8em;
+  color: #757575;
+  font-size: 14px;
+  margin: 0;
+}
+section#about .about-item .team-description::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid white;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: -20px;
+  display: block;
+}
+section#about .about-item .team-description-reverse {
+  padding: 20px;
+  position: relative;
+}
+section#about .about-item .team-description-reverse h5 {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+section#about .about-item .team-description-reverse h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+section#about .about-item .team-description-reverse p {
+  line-height: 1.8em;
+  color: #757575;
+  font-size: 14px;
+  margin: 0;
+}
+section#about .about-item .team-description-reverse::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  bottom: -15px;
+  display: block;
 }
