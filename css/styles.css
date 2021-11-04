@@ -285,3 +285,188 @@ section#about .about-item .team-description-reverse::after {
   bottom: -15px;
   display: block;
 }
+
+section#testimonials {
+  padding: 10% 0;
+  color: white;
+}
+section#testimonials .testimonials-img {
+  grid-column: 1/7;
+}
+section#testimonials .testimonials-img img {
+  width: 100%;
+}
+section#testimonials .testimonial-box {
+  background: #202020;
+  grid-column: 7/13;
+  padding: 40px;
+}
+section#testimonials .testimonial-box h2 {
+  font-weight: 300;
+  font-size: 40px;
+  width: 100%;
+  margin: 0;
+}
+section#testimonials .testimonial-box p {
+  width: 100%;
+  font-weight: 200;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.7em;
+  color: #d9d9d9;
+}
+section#testimonials .testimonial-box span {
+  color: #d9d9d9;
+  font-weight: 300;
+  font-size: 18px;
+  display: inline-block;
+  transform: translateY(-30%);
+}
+section#testimonials .testimonial-box span::before {
+  content: "";
+  display: inline-block;
+  background: url(/img/tst-image2.jpg) no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 15px;
+  transform: translateY(45%);
+}
+
+section#pricing {
+  background: #f9f9f9;
+  padding: 5% 0;
+}
+section#pricing .grid {
+  column-gap: 10px;
+}
+section#pricing h2 {
+  grid-column: 1/13;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+section#pricing .pricing-item {
+  grid-column: span 4;
+  background: white;
+  padding: 50px;
+}
+section#pricing .pricing-item h5 {
+  color: #353535;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 10px;
+}
+section#pricing .pricing-item ul {
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-top: 2px solid #f0f0f0;
+}
+section#pricing .pricing-item ul li {
+  color: #757575;
+  margin: 10px 0;
+}
+section#pricing .pricing-item .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+section#pricing .pricing-item .details span {
+  font-size: 20px;
+  align-self: center;
+}
+section#pricing .pricing-item .details a.btn-register {
+  border: 1px solid #29ca8e;
+  background: #29ca8e;
+  padding: 10px 20px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  align-self: center;
+}
+section#pricing .pricing-item .details a.btn-register:hover {
+  transition: all 0.5s ease;
+  color: #29ca8e;
+  background: white;
+}
+
+section#contact {
+  padding: 5% 0;
+}
+section#contact h2 {
+  grid-column: 1/13;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+section#contact input {
+  grid-column: span 4;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding-bottom: 10px;
+  text-indent: 10px;
+  border-bottom: 3px solid #f0f0f0;
+  margin-right: 10px;
+  align-self: end;
+}
+section#contact button {
+  grid-column: span 4;
+  background: #202020;
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+}
+section#contact button:hover {
+  transition: all 0.5s ease;
+  background: #29ca8e;
+}
+section#contact textarea {
+  grid-column: 1/13;
+  margin-top: 20px;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+footer {
+  padding: 5% 0;
+  background: #202020;
+}
+footer p {
+  grid-column: 1/8;
+  font-size: 14px;
+  color: white;
+}
+footer ul {
+  grid-column: 8/13;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+}
+footer ul li {
+  align-self: center;
+}
+footer ul li a {
+  margin-left: 15px;
+}
+footer ul li a:hover {
+  color: #29ca8e;
+  transition: all 0.5s ease;
+}
