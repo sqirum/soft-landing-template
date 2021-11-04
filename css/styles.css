@@ -48,6 +48,8 @@ section#home header {
   top: 0;
   z-index: 1;
   padding: 15px 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 section#home header a {
   grid-column: 1/3;
